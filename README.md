@@ -36,7 +36,7 @@ This preprocessing improves feature quality and model consistency.
 - Predictions depend on training data and may not generalize across all domains.
 - Outputs should not be used as the sole basis for decision-making.
 
-## 🚀 Getting Started & Usage
+## Getting Started & Usage 🚀
 Clone the repository and navigate to the project folder, then run inference:
 
 ```bash
@@ -48,14 +48,22 @@ cd verif-ai
 # Run inference script
 python predict.py "Enter your news text here"
 ```
-## 🛠 Future Enhancements
-[ ] Explainability: Integrate SHAP or LIME to show which words triggered the risk flag.
-[ ] Multi-language Support: Expand beyond English using multilingual embeddings.
-[ ] API Access: Wrap the model in a FastAPI or Flask wrapper for web integration.
-[ ] Real-time Scraping: Add a feature to verify news directly from a URL.
-## 👥 Contributors
-This project is developed and maintained by a team. Contributions include:
-Model Development: Design of the machine learning pipeline and classifier optimization.
-Documentation: Technical writing and maintenance of project resources.
-UI Concepts: Conceptual design and logic for user interaction.
-Ethical Design: Implementation of the risk-assessment framework and bias mitigation strategies.
+## Future Enhancements 🛠️
+- [ ] **Explainability:** Integrate SHAP or LIME to show which words triggered the risk flag.
+- [ ] **Multi-language Support:** Expand beyond English using multilingual embeddings.
+- [ ] **API Access:** Wrap the model in a FastAPI or Flask wrapper for web integration.
+- [ ] **Real-time Scraping:** Add a feature to verify news directly from a URL.
+
+---
+## Contributors 👥
+This project is developed and maintained by:
+* **[Dhishan](https://github.com/dhishan9)**
+* **[Alaka](https://github.com/Alaka1467)**
+
+### Project Contributions
+The team collaborated on the following technical areas:
+* **Model Development:** Design of the machine learning pipeline and Passive-Aggressive classifier optimization.
+* **Technical Documentation:** Creation of the project framework, README, and contributing guidelines.
+* **UI/UX Concepts:** Design of the web interface logic and user interaction flow.
+* **Ethical AI Design:** Implementation of the risk-assessment framework and bias mitigation strategies.
+
