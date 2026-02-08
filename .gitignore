@@ -1,0 +1,18 @@
+# Python environment and cache
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Model weights and large binary files
+*.pkl
+
+# Dataset files
+*.csv
+*.json
+*.xlsx
+
+# Operating system files
+.DS_Store
+Thumbs.db
