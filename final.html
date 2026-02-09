@@ -126,7 +126,7 @@
         if (!textInput) return alert("Please paste text first!");
         
         try {
-            const response = await fetch('https://your-render-app-name.onrender.com/verify', {
+            const response = await fetch('https://verif-ai-jnn5.onrender.com', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ text: textInput })
@@ -152,4 +152,5 @@
 </script>
 </body>
 </html>
+
 
