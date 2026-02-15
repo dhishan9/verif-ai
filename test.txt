@@ -1,1 +1,59 @@
-hello test 123
+/*------------------------------------------------------------------------------------------------ 
+ *   Author         : Emertxe (https://www.emertxe.com) 
+ *   Date           : Friday 07 April 2017 16:00:04 IST
+ *   File           : c_t142_ch4_stdio_formatted_printf_regex.c
+ *   Title          : Standard I/O - Formatted I/0 - printf - Regular Expressions
+ *   Description    : Most of the system application interact with the users. The output 
+ *                    presentations sometimes matter. The standard i/o functions gives us the 
+ *                    facilities required.There are 2 types of functions available to handle the 
+ *                    data, they are unformatted and formatted functions. The unformatted function 
+ *                    are use to handle raw data where there are no data conversions required 
+ *                    before access. While the formated function as the name specifies does the 
+ *                    required data conversions before storing or reading from memory. 
+ *                    This program shows how regular expression can be used with printf.
+ *-----------------------------------------------------------------------------------------------*/ 
+
+#include 
+#include 
+
+int main()
+{
+    char name[30];
+    char temp[30];
+    unsigned int id;
+    int status;
+
+    printf("Enter name: ");
+    status = scanf("%[a-zA-Z]", name);
+
+    /* Will be 1 if the user input starts with alphabet */
+    if (status == 1)
+    {
+     printf("Name: %sn", name);
+    }
+    else
+    {
+     printf("%sn", "You entered invalid name");
+     return 1;
+    }
+
+    /* Ignore all upto n */
+    while (getchar() != 'n');
+
+    printf("Enter an ID: ");
+    status = scanf("%[0-9]", temp);
+
+    if (status == 1)
+    {
+        /* Convert string to integer */
+     id = atoi(temp);
+     printf("ID: %dn", id);
+    }
+    else
+    {
+     printf("%sn", "You entered invalid ID");
+     return 1;
+    }
+
+    return 0;
+}
